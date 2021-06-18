@@ -100,8 +100,11 @@ DONE! Congratulations!
 #### Update local master
 
 Go into your terminal and update your local master, so it has the remote changes:
+```
 git checkout master
 git pull
+```
+
 Finished.
 
 #### Continue with next feature
