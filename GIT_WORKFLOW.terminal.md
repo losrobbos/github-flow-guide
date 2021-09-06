@@ -2,7 +2,7 @@
 
 ## Develop a feature
 
-`git checkout master` // always start your branch from the latest master
+`git checkout main` // always start your branch from the latest master
 
 `git pull` // make sure you have the lastest version of master
 
@@ -31,7 +31,7 @@ Now master is updated
 
 Go into your terminal and update your local master, so it has the remote changes:
 
-`git checkout master`
+`git checkout main`
 
 `git pull`
 
@@ -42,12 +42,12 @@ Finished!
 
 For the NEXT feature you simply repeat the cycle.
 
-IMPORTANT: ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on master! 
+IMPORTANT: ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on main! 
 
 Never fork off branches from other branches (=> hell guarantee).
 
 So always:
 
-`git checkout -b yourNewBranch master`
+`git checkout -b yourNewBranch main`
 
 Enjoy the merge!
