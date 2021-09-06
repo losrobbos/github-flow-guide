@@ -35,19 +35,19 @@ Okay. Let's start by creating a branch for our new feature.
 First we make sure, we start off with our branch from the LATEST stable version of our project. Which always should be found in the master branch.
 
 ```
-git checkout master // always start your branch from the latest master
-git fetch // make sure you have the latest version of master
+git checkout main // always start your branch from the latest main
+git fetch // make sure you have the latest version of main
 git pull // in case master has updates
-git checkout -b yourMassiveNewFeature master // create a new branch for your feature
+git checkout -b yourMassiveNewFeature main // create a new branch for your feature
 // now code your stuff on the branch in vscode
 ```
 
 #### Branch pushing
 
-Once your done with your branch and tested if everything works, you can bring it online
+Once you're done with your branch and tested if everything works, you can bring it online
 
 ```
-git branch // making sure you are still on your branch and not on master
+git branch // making sure you are still on your branch and not on main
 git status // make sure you do not accidentally add something that you do not wanted to add :leichtes_lächeln:
 git add . // or git add <dirname / filename> for every dir / file to have full control on adding
 git commit -m "I did this and that here, yeah"
@@ -90,18 +90,18 @@ After we pushed our branch to the GitHub repository, we can now try to integrate
 
 - All conflicts resolved
   - Now after you done "Commit merge" in the editor, you will get back to the pull request
-  - You should be able to merge the branch now into master
+  - You should be able to merge the branch now into main
   - The green button "Merge" should appear
   - Perform the merge
 
 DONE! Congratulations!
 
 
-#### Update local master
+#### Update local main
 
-Go into your terminal and update your local master, so it has the remote changes:
+Go into your terminal and update your local main, so it has the remote changes:
 ```
-git checkout master
+git checkout main
 git pull
 ```
 
@@ -113,10 +113,10 @@ NEXT feature: You repeat the cycle.
 
 Important: Do not reuse your old branch. Always create a new branch for every new feature or error fix.
 
-Important: ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on master! 
+Important: ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on main! 
 Never fork off new features branches from other feature branches (=> ride to hell guarantee!).
 
 So always:
 
-`git checkout -b yourNewBranch master`
+`git checkout -b yourNewBranch main`
 
