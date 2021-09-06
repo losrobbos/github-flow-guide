@@ -1,6 +1,6 @@
 ## Branching workflow
 
-Develop features in branches - with the GitHub Flow. A ypical workflow for companies.
+Develop features in branches - with the GitHub Flow. A typical workflow for companies.
 
 ### Develop a feature
 
