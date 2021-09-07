@@ -111,9 +111,9 @@ Finished.
 
 NEXT feature: You repeat the cycle.
 
-Important: Do not reuse your old branch. Always create a new branch for every new feature or error fix.
+Important: <b>Do not reuse your old branch</b>. Always create a new branch for every new feature or error fix.
 
-Important: ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on main! 
+Important - Part 2: ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on main! 
 Never fork off new features branches from other feature branches (=> ride to hell guarantee!).
 
 So always:
