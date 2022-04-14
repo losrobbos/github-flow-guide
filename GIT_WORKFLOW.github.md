@@ -36,8 +36,8 @@ First we make sure, we start off with our branch from the LATEST stable version 
 
 ```
 git checkout main // always start your branch from the latest main
-git fetch // make sure you have the latest version of main
-git pull // in case master has updates
+git fetch // make sure you have the latest remote version of main
+git pull // in case remote main has updates => changes will now be merged into your local main
 git checkout -b yourMassiveNewFeature main // create a new branch for your feature
 // now code your stuff on the branch in vscode
 ```
@@ -86,11 +86,12 @@ After we pushed our branch to the GitHub repository, we can now try to integrate
 - In case you do not know which changes to take...
   - Make a comment in the pull request to start a discussion
   - Ideally: Resolve the issues in the team together, in case of any doubts
-    - Or: Slack just person that you are "conflicting with" (hopefully just in code ;-))
+    - Or: Slack just the person that you are "conflicting with" (hopefully just in code ;-))
 
 - All conflicts resolved
-  - Now after you done "Commit merge" in the editor, you will get back to the pull request
-  - You should be able to merge the branch now into main
+  - When you are done hit the button "Commit merge" in the editor
+  - Now your branch will get updated and with the changes and you will get back to the pull request
+  - You should be able to merge your "fixed" branch into the main branch
   - The green button "Merge" should appear
   - Perform the merge
 
@@ -111,12 +112,16 @@ Finished.
 
 NEXT feature: You repeat the cycle.
 
-Important: <b>Do not reuse your old branch</b>. Always create a new branch for every new feature or error fix.
+Important: 
+- <b>Do not reuse your old branch</b>. Always create a new branch for every new feature or error fix.
+- ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on main! 
 
-Important - Part 2: ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on main! 
 Never fork off new features branches from other feature branches (=> ride to hell guarantee!).
 
 So always:
 
 `git checkout -b yourNewBranch main`
 
+to create a new feature branch.
+
+Happy Merging!
