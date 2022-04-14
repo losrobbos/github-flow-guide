@@ -90,7 +90,8 @@ After we pushed our branch to the GitHub repository, we can now try to integrate
 
 - All conflicts resolved
   - When you are done hit the button "Commit merge" in the editor
-  - Now your branch will get updated and with the changes and you will get back to the pull request
+  - Your branch will get updated with the changes (the main branch is still untouched!)
+  - Now you will get back to the pull request
   - You should be able to merge your "fixed" branch into the main branch
   - The green button "Merge" should appear
   - Perform the merge
@@ -114,9 +115,7 @@ NEXT feature: You repeat the cycle.
 
 Important: 
 - <b>Do not reuse your old branch</b>. Always create a new branch for every new feature or error fix.
-- ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on main! 
-
-Never fork off new features branches from other feature branches (=> ride to hell guarantee!).
+- ALWAYS ALWAYS ALWAAAAAAAAAAAAAAAAAAAAYS create your branch based on main! Never fork off new features branches from other feature branches (=> ride to hell guarantee!).
 
 So always:
 
