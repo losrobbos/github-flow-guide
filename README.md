@@ -46,7 +46,6 @@ git checkout -b <yourMassiveNewFeature> main // create a new branch for your fea
 Once you're done with a part of your feature and tested if everything works, you can commit the changes.
 
 ```
-git branch // making sure you are still on your branch and not on main
 git status // make sure you do not accidentally add something that you do not wanted to add :leichtes_lächeln:
 git add . // or git add <dirname / filename> for every dir / file to have full control on adding
 git commit -m "I did this and that here, yeah"
