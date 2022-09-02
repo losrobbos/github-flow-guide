@@ -42,15 +42,48 @@ git checkout -b yourMassiveNewFeature main // create a new branch for your featu
 // now code your stuff on the branch in vscode
 ```
 
-#### Branch pushing
+#### Frequent commits
 
-Once you're done with your branch and tested if everything works, you can bring it online
+Once you're done with a part of your feature and tested if everything works, you can commit the changes.
 
-```
 git branch // making sure you are still on your branch and not on main
 git status // make sure you do not accidentally add something that you do not wanted to add :leichtes_lächeln:
 git add . // or git add <dirname / filename> for every dir / file to have full control on adding
 git commit -m "I did this and that here, yeah"
+
+#### Finishing the branch
+
+Once your done, once more add and commit everything. `git status` command should show you no files, neither red or green.
+
+It is now recommended that you import the latest changes from your colleagues (so the main branch) in your branch to see, if your branch works well together with the work of the others or it produces any conflicts.
+
+It is adviced to do this in a team meeting or minimum in a pair (two developers of the team).
+
+```
+git checkout main // switch over to main branch
+git pull // grab latest changes from main branch
+git checkout <yourBranch> // change over to your branch (replace <yourBranch> with the name of your branch)
+git merge main // merge the latest changes of main into your branch
+```
+
+In case there are any conflicts with code from your colleagues, git will tell you right away.
+
+You can see the conflicting files when running `git status`. Usually they will be listed in red as "unmerged paths"
+
+Fix the code conflicts together as a team in VsCode.
+
+Once all conflicts are solved, try to start the app and see if everything still works. 
+
+Now add and commit the changes.
+
+Now your branch should be ready to get pushed into GitHub and get reviewed and merged there.
+
+#### Branch pushing
+
+Once you're done with your branch and tested if everything works, also together with the latest changes in main branch, you can bring it online
+
+```
+git branch // make sure you are on your own branch
 git push // copy the line that is created and execute it on the terminal
 ```
 
