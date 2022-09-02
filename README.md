@@ -36,9 +36,8 @@ First we make sure, we start off with our branch from the LATEST stable version 
 
 ```
 git checkout main // always start your branch from the latest main
-git fetch // make sure you have the latest remote version of main
-git pull // in case remote main has updates => changes will now be merged into your local main
-git checkout -b yourMassiveNewFeature main // create a new branch for your feature
+git pull // make sure you have the latest remote version of main
+git checkout -b <yourMassiveNewFeature> main // create a new branch for your feature (replace <yourMassiveNewFeature> with your feature name)
 // now code your stuff on the branch in vscode
 ```
 
