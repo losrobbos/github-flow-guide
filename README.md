@@ -57,7 +57,7 @@ git commit -m "I did this and that here, yeah"
 
 Once your done, once more add and commit everything. `git status` command should show you no files, neither red or green.
 
-It is now recommended that you import the latest changes from your colleagues (so the main branch) in your branch to see, if your branch works well together with the work of the others or it produces any conflicts.
+It is now recommended that you import the latest changes from your colleagues (so the main branch) in your branch to see, if your branch works well together with the work of the others or if it produces any conflicts.
 
 It is adviced to do this in a team meeting or minimum in a pair (two developers of the team).
 
@@ -72,7 +72,7 @@ In case there are any conflicts with code from your colleagues, git will tell yo
 
 You can see the conflicting files when running `git status`. Usually they will be listed in red as "unmerged paths"
 
-Fix the code conflicts together as a team in VsCode.
+Open the listed files in VsCode, fix the code conflicts, ideally together as a team or pair.
 
 Once all conflicts are solved, try to start the app and see if everything still works. 
 
